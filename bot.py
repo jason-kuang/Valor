@@ -1,7 +1,7 @@
 import discord
 import json
 import cassiopeia as cass
-
+from cassiopeia import Summoner
 
 
 client = discord.Client()
@@ -21,7 +21,18 @@ async def on_message(message):
         await message.channel.send('Hello!')
 
     if message.content.startswith('$challenger'):
-        challenger_league = cass.get_challenger_league(queue=cass.Queue.ranked_solo_fives)
+        x = message.content.split()
+        summoner = Summoner(name=x[1], region="NA")
+        emptyStr = ""
+        if (summoner.current_match is not None):
+            participant = summoner.current_match.participants
+            c = 0
+            for x in participant:
+                emptyStr += "{name} ({rank}) is playing {champion}\n".format(name=x.summoner.name, champion=x.champion.name, rank=x.summoner.level)
+                c += 1
+                if c == 5:
+                    emptyStr += "\n"
+        await message.channel.send(emptyStr)
         
 
 
