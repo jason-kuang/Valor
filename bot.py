@@ -8,6 +8,7 @@ client = discord.Client()
 cass.set_default_region("NA")
 
 
+
 @client.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
@@ -20,19 +21,34 @@ async def on_message(message):
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
 
-    if message.content.startswith('$challenger'):
+    if message.content.startswith('$match'):
         x = message.content.split()
         summoner = Summoner(name=x[1], region="NA")
-        emptyStr = ""
+        emptyStr = "{name} is not in a match right now!".format(name = x[1])
         if (summoner.current_match is not None):
             participant = summoner.current_match.participants
             c = 0
             for x in participant:
-                emptyStr += "{name} ({rank}) is playing {champion}\n".format(name=x.summoner.name, champion=x.champion.name, rank=x.summoner.level)
+                emptyStr += "{name} (Level:{rank}) is playing {champion}\n".format(name=x.summoner.name, champion=x.champion.name, rank=x.summoner.level)
                 c += 1
                 if c == 5:
                     emptyStr += "\n"
         await message.channel.send(emptyStr)
+
+    if message.content.startswith('$challenger'):
+        name = message.content.split()
+        challenger = cass.get_challenger_league(queue=cass.Queue.ranked_solo_fives)
+        players = challenger.entries
+        i = 1
+        playerDict = {}
+        for x in players:
+            playerDict[x.summoner.name] = x.league_points
+        sorteds = sorted(playerDict.items(), key=lambda x: x[1], reverse=True)
+        for x in sorteds:
+            playerDict[x[0]] = i
+            i += 1
+        returned = "{player} is rank {rank} in the Challenger league!".format(player=name[1], rank=playerDict[name[1]])
+        await message.channel.send(returned)
         
 
 
