@@ -22,9 +22,9 @@ async def on_message(message):
         await message.channel.send('Hello!')
 
     if message.content.startswith('$match'):
-        x = message.content.split()
-        summoner = Summoner(name=x[1], region="NA")
-        emptyStr = "{name} is not in a match right now!".format(name = x[1])
+        x = " ".join(message.content.split()[1:len(message.content.split())])
+        summoner = Summoner(name=x, region="NA")
+        emptyStr = "{name} is not in a match right now!".format(name = x)
         if (summoner.current_match is not None):
             participant = summoner.current_match.participants
             c = 0
@@ -36,7 +36,8 @@ async def on_message(message):
         await message.channel.send(emptyStr)
 
     if message.content.startswith('$challenger'):
-        name = message.content.split()
+        name = " ".join(message.content.split()[1:len(message.content.split())])
+        print(name)
         challenger = cass.get_challenger_league(queue=cass.Queue.ranked_solo_fives)
         players = challenger.entries
         i = 1
@@ -47,7 +48,7 @@ async def on_message(message):
         for x in sorteds:
             playerDict[x[0]] = i
             i += 1
-        returned = "{player} is rank {rank} in the Challenger league!".format(player=name[1], rank=playerDict[name[1]])
+        returned = "{player} is rank {rank} in the Challenger".format(player=name, rank=playerDict[name])
         await message.channel.send(returned)
         
 

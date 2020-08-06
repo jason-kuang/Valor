@@ -21,6 +21,8 @@ def print_leagues():
 
 
 def challenger_leagues():
+    zven = "$challenger C9 Zven"
+    splits = " ".join(zven.split()[1:len(zven.split())])
     challenger = cass.get_challenger_league(queue=cass.Queue.ranked_solo_fives)
     players = challenger.entries
     i = 1
@@ -31,7 +33,7 @@ def challenger_leagues():
     for x in sorteds:
         playerDict[x[0]] = i
         i += 1
-    print(playerDict["GibIe"])
+    print(playerDict[splits])
 
 
 

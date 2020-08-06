@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1d4663ea-e973-4db0-9eca-90175e0785b1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/pybot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pybot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch.py" afterDir="false" />
@@ -10,6 +19,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,13 +38,14 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -40,6 +53,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -82,6 +96,9 @@
       <updated>1596521198247</updated>
       <workItem from="1596521205339" duration="5437000" />
       <workItem from="1596564791819" duration="16037000" />
+      <workItem from="1596685447067" duration="129000" />
+      <workItem from="1596685695708" duration="716000" />
+      <workItem from="1596693908442" duration="4324000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.&#10;&#10;Working functions include...not much.">
       <created>1596526577153</created>
@@ -133,48 +150,60 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596521238579" />
-    <state x="903" y="207" key="CommitChangelistDialog2" timestamp="1596583692830">
+    <state x="989" y="286" key="#scratch" timestamp="1596685481795">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="903" y="207" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596583692830" />
+    <state x="989" y="286" key="#scratch/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596685481795" />
+    <state x="903" y="207" key="CommitChangelistDialog2" timestamp="1596610927765">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="903" y="207" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596610927765" />
+    <state x="157" y="189" key="DiffContextDialog" timestamp="1596610936676">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="157" y="189" key="DiffContextDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596610936676" />
     <state x="1148" y="594" key="Github.ShareDialog" timestamp="1596526827002">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1148" y="594" key="Github.ShareDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596526827002" />
-    <state width="2517" height="380" key="GridCell.Tab.0.bottom" timestamp="1596610554361">
+    <state width="2517" height="380" key="GridCell.Tab.0.bottom" timestamp="1596695408548">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.bottom/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596610554361" />
-    <state width="2517" height="380" key="GridCell.Tab.0.center" timestamp="1596610554361">
+    <state width="2517" height="380" key="GridCell.Tab.0.bottom/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596695408548" />
+    <state width="2517" height="380" key="GridCell.Tab.0.center" timestamp="1596695408548">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.center/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596610554361" />
-    <state width="2517" height="380" key="GridCell.Tab.0.left" timestamp="1596610554361">
+    <state width="2517" height="380" key="GridCell.Tab.0.center/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596695408548" />
+    <state width="2517" height="380" key="GridCell.Tab.0.left" timestamp="1596695408548">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.left/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596610554361" />
-    <state width="2517" height="380" key="GridCell.Tab.0.right" timestamp="1596610554361">
+    <state width="2517" height="380" key="GridCell.Tab.0.left/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596695408548" />
+    <state width="2517" height="380" key="GridCell.Tab.0.right" timestamp="1596695408548">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.right/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596610554361" />
-    <state x="781" y="496" key="Vcs.Push.Dialog.v2" timestamp="1596583718228">
+    <state width="2517" height="380" key="GridCell.Tab.0.right/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596695408548" />
+    <state x="781" y="345" key="SettingsEditor" timestamp="1596685743210">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="496" key="Vcs.Push.Dialog.v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596583718228" />
+    <state x="781" y="345" key="SettingsEditor/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596685743210" />
+    <state x="781" y="496" key="Vcs.Push.Dialog.v2" timestamp="1596610937631">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="496" key="Vcs.Push.Dialog.v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596610937631" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596526835233">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596526835233" />
-    <state x="956" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1596564870379">
+    <state x="956" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1596693908499">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="956" y="524" key="com.intellij.ide.util.TipDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596564870379" />
+    <state x="956" y="524" key="com.intellij.ide.util.TipDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596693908499" />
     <state x="1087" y="612" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596526801981">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1087" y="612" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596526801981" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pybot$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1596610550525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pybot$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1596695403407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
