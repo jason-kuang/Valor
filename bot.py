@@ -25,11 +25,12 @@ async def on_message(message):
         x = " ".join(message.content.split()[1:len(message.content.split())])
         summoner = Summoner(name=x, region="NA")
         emptyStr = "{name} is not in a match right now!".format(name = x)
-        if (summoner.current_match is not None):
+        if summoner.current_match is not None:
             participant = summoner.current_match.participants
             c = 0
+            emptyStr = "{type} {time}\n".format(type=summoner.current_match.queue.name, time= summoner.current_match.duration)
             for x in participant:
-                emptyStr += "{name} (Level:{rank}) is playing {champion}\n".format(name=x.summoner.name, champion=x.champion.name, rank=x.summoner.level)
+                emptyStr += "{name} ({rank}) is playing {champion}\n".format(name=x.summoner.name, champion=x.champion.name, rank = str(summoner.league_entries[0].tier) + ' ' + str(summoner.league_entries[0].division))
                 c += 1
                 if c == 5:
                     emptyStr += "\n"
@@ -37,7 +38,6 @@ async def on_message(message):
 
     if message.content.startswith('$challenger'):
         name = " ".join(message.content.split()[1:len(message.content.split())])
-        print(name)
         challenger = cass.get_challenger_league(queue=cass.Queue.ranked_solo_fives)
         players = challenger.entries
         i = 1
@@ -48,7 +48,7 @@ async def on_message(message):
         for x in sorteds:
             playerDict[x[0]] = i
             i += 1
-        returned = "{player} is rank {rank} in the Challenger".format(player=name, rank=playerDict[name])
+        returned = "{player} is rank {rank} in Challenger queue!".format(player=name, rank=playerDict[name])
         await message.channel.send(returned)
         
 

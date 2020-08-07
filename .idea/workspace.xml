@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d4663ea-e973-4db0-9eca-90175e0785b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/pybot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pybot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch.py" afterDir="false" />
@@ -55,7 +54,29 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.bot">
+    <configuration name="bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pybot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pybot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,6 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bot" />
         <item itemvalue="Python.scratch" />
       </list>
     </recent_temporary>
@@ -98,7 +120,8 @@
       <workItem from="1596564791819" duration="16037000" />
       <workItem from="1596685447067" duration="129000" />
       <workItem from="1596685695708" duration="716000" />
-      <workItem from="1596693908442" duration="4324000" />
+      <workItem from="1596693908442" duration="4454000" />
+      <workItem from="1596738353349" duration="5417000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.&#10;&#10;Working functions include...not much.">
       <created>1596526577153</created>
@@ -121,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596583681815</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="New patch includes a fix for summoner names that contain spaces to not work.&#10;&#10;I dun goofed that one.">
+      <created>1596700825084</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596700825084</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +173,8 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <MESSAGE value="First commit.&#10;&#10;Working functions include...not much." />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit.&#10;&#10;Working functions include...not much." />
+    <MESSAGE value="New patch includes a fix for summoner names that contain spaces to not work.&#10;&#10;I dun goofed that one." />
+    <option name="LAST_COMMIT_MESSAGE" value="New patch includes a fix for summoner names that contain spaces to not work.&#10;&#10;I dun goofed that one." />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596521238579">
@@ -154,10 +185,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="989" y="286" key="#scratch/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596685481795" />
-    <state x="903" y="207" key="CommitChangelistDialog2" timestamp="1596610927765">
+    <state x="903" y="207" key="CommitChangelistDialog2" timestamp="1596700824360">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="903" y="207" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596610927765" />
+    <state x="903" y="207" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596700824360" />
     <state x="157" y="189" key="DiffContextDialog" timestamp="1596610936676">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -166,44 +197,45 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1148" y="594" key="Github.ShareDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596526827002" />
-    <state width="2517" height="380" key="GridCell.Tab.0.bottom" timestamp="1596695408548">
+    <state width="2517" height="380" key="GridCell.Tab.0.bottom" timestamp="1596781195594">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.bottom/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596695408548" />
-    <state width="2517" height="380" key="GridCell.Tab.0.center" timestamp="1596695408548">
+    <state width="2517" height="380" key="GridCell.Tab.0.bottom/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596781195594" />
+    <state width="2517" height="380" key="GridCell.Tab.0.center" timestamp="1596781195594">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.center/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596695408548" />
-    <state width="2517" height="380" key="GridCell.Tab.0.left" timestamp="1596695408548">
+    <state width="2517" height="380" key="GridCell.Tab.0.center/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596781195594" />
+    <state width="2517" height="380" key="GridCell.Tab.0.left" timestamp="1596781195594">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.left/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596695408548" />
-    <state width="2517" height="380" key="GridCell.Tab.0.right" timestamp="1596695408548">
+    <state width="2517" height="380" key="GridCell.Tab.0.left/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596781195594" />
+    <state width="2517" height="380" key="GridCell.Tab.0.right" timestamp="1596781195594">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.right/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596695408548" />
+    <state width="2517" height="380" key="GridCell.Tab.0.right/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596781195594" />
     <state x="781" y="345" key="SettingsEditor" timestamp="1596685743210">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596685743210" />
-    <state x="781" y="496" key="Vcs.Push.Dialog.v2" timestamp="1596610937631">
+    <state x="187" y="521" key="Vcs.Push.Dialog.v2" timestamp="1596700829182">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="496" key="Vcs.Push.Dialog.v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596610937631" />
+    <state x="187" y="521" key="Vcs.Push.Dialog.v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596700829182" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596526835233">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596526835233" />
-    <state x="956" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1596693908499">
+    <state x="956" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1596738357124">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="956" y="524" key="com.intellij.ide.util.TipDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596693908499" />
+    <state x="956" y="524" key="com.intellij.ide.util.TipDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596738357124" />
     <state x="1087" y="612" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596526801981">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1087" y="612" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596526801981" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pybot$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1596695403407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pybot$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1596781159868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pybot$bot.coverage" NAME="bot Coverage Results" MODIFIED="1596781764714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

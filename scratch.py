@@ -1,6 +1,7 @@
 import cassiopeia as cass
 from cassiopeia.core import *
-from cassiopeia import Summoner
+from cassiopeia import Summoner, ShardStatus
+
 import json
 
 
@@ -35,6 +36,10 @@ def challenger_leagues():
         i += 1
     print(playerDict[splits])
 
+def shard():
+    summoner = Summoner(name="GibIe",region="NA")
+    rank = str(summoner.league_entries[0].tier) + ' ' + str(summoner.league_entries[0].division)
+    print(rank)
 
 
 
@@ -42,4 +47,4 @@ def challenger_leagues():
 
 
 if __name__ == "__main__":
-    challenger_leagues()
+    shard()
