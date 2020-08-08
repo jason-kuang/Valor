@@ -30,7 +30,7 @@ async def on_message(message):
             c = 0
             emptyStr = "{type} {time}\n".format(type=summoner.current_match.queue.name, time= summoner.current_match.duration)
             for x in participant:
-                emptyStr += "{name} ({rank}) is playing {champion}\n".format(name=x.summoner.name, champion=x.champion.name, rank = str(summoner.league_entries[0].tier) + ' ' + str(summoner.league_entries[0].division))
+                emptyStr += "{name} ({rank}) is playing {champion}\n".format(name=x.summoner.name, champion=x.champion.name, rank = str(x.summoner.league_entries[0].tier) + ' ' + str(x.summoner.league_entries[0].division))
                 c += 1
                 if c == 5:
                     emptyStr += "\n"
@@ -50,6 +50,23 @@ async def on_message(message):
             i += 1
         returned = "{player} is rank {rank} in Challenger queue!".format(player=name, rank=playerDict[name])
         await message.channel.send(returned)
+
+    if message.content.startswith('$champion'):
+        name = name = " ".join(message.content.split()[1:len(message.content.split())]).capitalize()
+        with open('champions/{champion}.json'.format(champion=name), encoding="utf8") as champData:
+            data = json.load(champData)
+            champQ = data['data'][name]['spells'][0]
+            champW = data['data'][name]['spells'][1]
+            champE = data['data'][name]['spells'][2]
+            champR = data['data'][name]['spells'][3]
+            champPassive = data['data'][name]['passive']
+            P = "Passive: {name} - {description}\n".format(name=champPassive['name'],description=champPassive['description'])
+            Q = "Q: {name} - {description} | {cooldownBurn}\n".format(name=champQ['name'],description=champQ['description'], cooldownBurn=champQ['cooldownBurn'])
+            W = "W: {name} - {description} | {cooldownBurn}\n".format(name=champW['name'],description=champW['description'], cooldownBurn=champW['cooldownBurn'])
+            E = "E: {name} - {description} | {cooldownBurn}\n".format(name=champE['name'],description=champE['description'], cooldownBurn=champE['cooldownBurn'])
+            R = "R: {name} - {description} | {cooldownBurn}\n".format(name=champR['name'],description=champR['description'], cooldownBurn=champR['cooldownBurn'])
+
+        await message.channel.send(P + Q + W + E + R)
         
 
 

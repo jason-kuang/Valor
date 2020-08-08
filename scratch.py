@@ -41,10 +41,28 @@ def shard():
     rank = str(summoner.league_entries[0].tier) + ' ' + str(summoner.league_entries[0].division)
     print(rank)
 
+def champions(name):
+    name = name.capitalize().replace(" ", "")
+    with open('champions/{champion}.json'.format(champion=name), encoding="utf8") as champData:
+        data = json.load(champData)
+        #print(data['data'][name]['spells'][3])
+        champQ = data['data'][name]['spells'][0]
+        champW = data['data'][name]['spells'][1]
+        champE = data['data'][name]['spells'][2]
+        champR = data['data'][name]['spells'][3]
+        champPassive = data['data'][name]['passive']
+        P = "Passive: {name} - {description}\n".format(name=champPassive['name'],description=champPassive['description'])
+        Q = "Q: {name} - {description} | {damageBurn} | {cooldownBurn}\n".format(name=champQ['name'],description=champQ['description'], cooldownBurn=champQ['cooldownBurn'])
+        W = "W: {name} - {description} | {cooldownBurn}\n".format(name=champW['name'],description=champW['description'], cooldownBurn=champW['cooldownBurn'])
+        E = "E: {name} - {description} | {cooldownBurn}\n".format(name=champE['name'],description=champE['description'], cooldownBurn=champE['cooldownBurn'])
+        R = "R: {name} - {description} | {cooldownBurn}\n".format(name=champR['name'],description=champR['description'], cooldownBurn=champR['cooldownBurn'])
+        print(P + Q + W + E + R)
+
+
 
 
 
 
 
 if __name__ == "__main__":
-    shard()
+    champions("Riven")
