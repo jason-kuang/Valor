@@ -11,8 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1d4663ea-e973-4db0-9eca-90175e0785b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +125,7 @@
       <workItem from="1596685695708" duration="716000" />
       <workItem from="1596693908442" duration="4454000" />
       <workItem from="1596738353349" duration="5709000" />
-      <workItem from="1596825256404" duration="10439000" />
+      <workItem from="1596825256404" duration="10906000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.&#10;&#10;Working functions include...not much.">
       <created>1596526577153</created>
@@ -164,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596782668839</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added a new command! $champion &quot;CHAMPION&quot; now returns you all four of the characters abilities along with their passive and their cooldowns.&#10;&#10;Added some new known issues too.">
+      <created>1596871794500</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596871794500</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +193,8 @@
     <MESSAGE value="First commit.&#10;&#10;Working functions include...not much." />
     <MESSAGE value="New patch includes a fix for summoner names that contain spaces to not work.&#10;&#10;I dun goofed that one." />
     <MESSAGE value="$match command now displays the ranks of players rather than their level. Much more useful when I'm trying to assess how hard my enemy laner is going to demolish me.&#10;&#10;$match also returns what kind of queue it is. Such as ranked flex, or ranked solo 5x5." />
-    <option name="LAST_COMMIT_MESSAGE" value="$match command now displays the ranks of players rather than their level. Much more useful when I'm trying to assess how hard my enemy laner is going to demolish me.&#10;&#10;$match also returns what kind of queue it is. Such as ranked flex, or ranked solo 5x5." />
+    <MESSAGE value="Added a new command! $champion &quot;CHAMPION&quot; now returns you all four of the characters abilities along with their passive and their cooldowns.&#10;&#10;Added some new known issues too." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a new command! $champion &quot;CHAMPION&quot; now returns you all four of the characters abilities along with their passive and their cooldowns.&#10;&#10;Added some new known issues too." />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596521238579">
@@ -199,10 +205,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="989" y="286" key="#scratch/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596685481795" />
-    <state x="1222" y="236" key="CommitChangelistDialog2" timestamp="1596782668171">
+    <state x="1026" y="236" key="CommitChangelistDialog2" timestamp="1596871793711">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1222" y="236" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596782668171" />
+    <state x="1026" y="236" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596871793711" />
     <state x="157" y="189" key="DiffContextDialog" timestamp="1596610936676">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -231,10 +237,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596685743210" />
-    <state x="187" y="521" key="Vcs.Push.Dialog.v2" timestamp="1596782672832">
+    <state x="187" y="521" key="Vcs.Push.Dialog.v2" timestamp="1596871796420">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="187" y="521" key="Vcs.Push.Dialog.v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596782672832" />
+    <state x="187" y="521" key="Vcs.Push.Dialog.v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596871796420" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596526835233">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
