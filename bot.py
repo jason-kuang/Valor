@@ -70,10 +70,10 @@ async def on_message(message):
             champR = data['data'][name]['spells'][3]
             champPassive = data['data'][name]['passive']
             P = "Passive: {name} - {description}\n".format(name=champPassive['name'],description=champPassive['description'])
-            Q = "Q: {name} - {description} | {cooldownBurn}\n".format(name=champQ['name'],description=champQ['description'], cooldownBurn=champQ['cooldownBurn'])
-            W = "W: {name} - {description} | {cooldownBurn}\n".format(name=champW['name'],description=champW['description'], cooldownBurn=champW['cooldownBurn'])
-            E = "E: {name} - {description} | {cooldownBurn}\n".format(name=champE['name'],description=champE['description'], cooldownBurn=champE['cooldownBurn'])
-            R = "R: {name} - {description} | {cooldownBurn}\n".format(name=champR['name'],description=champR['description'], cooldownBurn=champR['cooldownBurn'])
+            Q = "Q: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=champQ['name'],description=champQ['description'], cooldownBurn=champQ['cooldownBurn'])
+            W = "W: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=champW['name'],description=champW['description'], cooldownBurn=champW['cooldownBurn'])
+            E = "E: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=champE['name'],description=champE['description'], cooldownBurn=champE['cooldownBurn'])
+            R = "R: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=champR['name'],description=champR['description'], cooldownBurn=champR['cooldownBurn'])
         print("Returned champion data for {champ}".format(champ=name))
         await message.channel.send(P + Q + W + E + R)
         
