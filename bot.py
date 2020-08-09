@@ -8,6 +8,10 @@ client = discord.Client()
 cass.set_default_region("NA")
 
 
+def extractNames(message):
+    # I feel like [1:-1] should be working here but it's not?
+    summoner = " ".join(message.content.split()[1:len(message.content.split())])
+    return summoner
 
 @client.event
 async def on_ready():
@@ -22,7 +26,7 @@ async def on_message(message):
         await message.channel.send('Hello!')
 
     if message.content.startswith('$match'):
-        x = " ".join(message.content.split()[1:len(message.content.split())])
+        x = extractNames(message)
         summoner = Summoner(name=x, region="NA")
         emptyStr = "{name} is not in a match right now!".format(name = x)
         if summoner.current_match is not None:
@@ -37,7 +41,7 @@ async def on_message(message):
         await message.channel.send(emptyStr)
 
     if message.content.startswith('$challenger'):
-        name = " ".join(message.content.split()[1:len(message.content.split())])
+        name = extractNames(message)
         challenger = cass.get_challenger_league(queue=cass.Queue.ranked_solo_fives)
         players = challenger.entries
         i = 1
@@ -48,11 +52,16 @@ async def on_message(message):
         for x in sorteds:
             playerDict[x[0]] = i
             i += 1
+        #with open('challengers.txt','r') as rankings:
+           # rank = json.load(rankings)
+            #if playerDict[rankings.keys] !=
+        with open('challengers.txt','w') as outfile:
+            json.dump(playerDict,outfile)
         returned = "{player} is rank {rank} in Challenger queue!".format(player=name, rank=playerDict[name])
         await message.channel.send(returned)
 
     if message.content.startswith('$champion'):
-        name = name = " ".join(message.content.split()[1:len(message.content.split())]).capitalize()
+        name = extractNames(message).title().replace(" ", "")
         with open('champions/{champion}.json'.format(champion=name), encoding="utf8") as champData:
             data = json.load(champData)
             champQ = data['data'][name]['spells'][0]
@@ -65,7 +74,7 @@ async def on_message(message):
             W = "W: {name} - {description} | {cooldownBurn}\n".format(name=champW['name'],description=champW['description'], cooldownBurn=champW['cooldownBurn'])
             E = "E: {name} - {description} | {cooldownBurn}\n".format(name=champE['name'],description=champE['description'], cooldownBurn=champE['cooldownBurn'])
             R = "R: {name} - {description} | {cooldownBurn}\n".format(name=champR['name'],description=champR['description'], cooldownBurn=champR['cooldownBurn'])
-
+        print("Returned champion data for {champ}".format(champ=name))
         await message.channel.send(P + Q + W + E + R)
         
 
