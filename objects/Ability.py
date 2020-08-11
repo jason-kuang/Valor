@@ -20,7 +20,7 @@ class Ability:
     def fromJson(cls, json, kind):
         name = json['name']
         description = json['description']
-        cooldown = json.get['cooldownBurn']
+        cooldown = json['cooldownBurn'] if kind != AbilityKind.PASSIVE else ""
         kind = kind
         return cls(name, kind, description, cooldown)
 

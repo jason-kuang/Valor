@@ -1,6 +1,9 @@
 import discord
 import json
 import cassiopeia as cass
+import urllib
+import os.path
+from os import path
 from objects import Ability
 from cassiopeia import Summoner
 
@@ -70,14 +73,14 @@ async def on_message(message):
             champW = Ability.Ability.fromJson(spells[1], Ability.AbilityKind.W)
             champE = Ability.Ability.fromJson(spells[2], Ability.AbilityKind.E)
             champR = Ability.Ability.fromJson(spells[3], Ability.AbilityKind.R)
-            # champPassive = Ability.Ability.fromJson(champion['passive'], Ability.AbilityKind.PASSIVE)
-            # P = "Passive: {name} - {description}\n".format(name=champPassive['name'],description=champPassive['description'])
+            champPassive = Ability.Ability.fromJson(champion['passive'], Ability.AbilityKind.PASSIVE)
+            P = "Passive: {name} - {description}\n".format(name=champPassive.name,description=champPassive.description)
             Q = "Q: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=champQ.name,description=champQ.description, cooldownBurn=champQ.cooldown)
             W = "W: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=champW.name,description=champW.description, cooldownBurn=champW.cooldown)
             E = "E: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=champE.name,description=champE.description, cooldownBurn=champE.cooldown)
             R = "R: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=champR.name,description=champR.description, cooldownBurn=champR.cooldown)
         print("Returned champion data for {champ}".format(champ=name))
-        await message.channel.send(Q + W + E + R)
+        await message.channel.send(P + Q + W + E + R)
         
 
 

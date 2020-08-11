@@ -10,10 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d4663ea-e973-4db0-9eca-90175e0785b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Ability.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Champion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/objects/Champion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Champion.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects/Ability.py" beforeDir="false" afterPath="$PROJECT_DIR$/objects/Ability.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -57,6 +60,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\pybot\objects" />
       <recent name="C:\pybot" />
     </key>
   </component>
@@ -130,7 +134,8 @@
       <workItem from="1596738353349" duration="5709000" />
       <workItem from="1596825256404" duration="10906000" />
       <workItem from="1596916012638" duration="10100000" />
-      <workItem from="1597000285520" duration="8919000" />
+      <workItem from="1597000285520" duration="9591000" />
+      <workItem from="1597090371087" duration="13988000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.&#10;&#10;Working functions include...not much.">
       <created>1596526577153</created>
@@ -195,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596959764885</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Created an Ability object to help with the redundancy of developing abilities for each Champion. &#10;&#10;Future plans involve wanting to create champion classes to further reduce redundancy.">
+      <created>1597038011150</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1597038011150</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +234,8 @@
     <MESSAGE value="Added a new command! $champion &quot;CHAMPION&quot; now returns you all four of the characters abilities along with their passive and their cooldowns.&#10;&#10;Added some new known issues too." />
     <MESSAGE value="Added some very simple modularizing and the foundation for a $challenger feature that lets you know how far someone fell/went upwards since the last time their name was polled!" />
     <MESSAGE value="Added local support for Yone.&#10;&#10;Changed some formatting of the $champion command." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added local support for Yone.&#10;&#10;Changed some formatting of the $champion command." />
+    <MESSAGE value="Created an Ability object to help with the redundancy of developing abilities for each Champion. &#10;&#10;Future plans involve wanting to create champion classes to further reduce redundancy." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created an Ability object to help with the redundancy of developing abilities for each Champion. &#10;&#10;Future plans involve wanting to create champion classes to further reduce redundancy." />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596521238579">
@@ -233,10 +246,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="989" y="286" key="#scratch/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596685481795" />
-    <state x="744" y="255" key="CommitChangelistDialog2" timestamp="1596959764261">
+    <state x="404" y="265" key="CommitChangelistDialog2" timestamp="1597038010472">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="744" y="255" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596959764261" />
+    <state x="404" y="265" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597038010472" />
     <state x="157" y="189" key="DiffContextDialog" timestamp="1596610936676">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -245,22 +258,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1148" y="594" key="Github.ShareDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596526827002" />
-    <state width="2517" height="332" key="GridCell.Tab.0.bottom" timestamp="1596917714694">
+    <state width="2517" height="332" key="GridCell.Tab.0.bottom" timestamp="1597128426836">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="332" key="GridCell.Tab.0.bottom/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596917714694" />
-    <state width="2517" height="332" key="GridCell.Tab.0.center" timestamp="1596917714693">
+    <state width="2517" height="332" key="GridCell.Tab.0.bottom/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597128426836" />
+    <state width="2517" height="332" key="GridCell.Tab.0.center" timestamp="1597128426836">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="332" key="GridCell.Tab.0.center/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596917714693" />
-    <state width="2517" height="332" key="GridCell.Tab.0.left" timestamp="1596917714693">
+    <state width="2517" height="332" key="GridCell.Tab.0.center/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597128426836" />
+    <state width="2517" height="332" key="GridCell.Tab.0.left" timestamp="1597128426836">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="332" key="GridCell.Tab.0.left/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596917714693" />
-    <state width="2517" height="332" key="GridCell.Tab.0.right" timestamp="1596917714694">
+    <state width="2517" height="332" key="GridCell.Tab.0.left/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597128426836" />
+    <state width="2517" height="332" key="GridCell.Tab.0.right" timestamp="1597128426836">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="332" key="GridCell.Tab.0.right/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596917714694" />
+    <state width="2517" height="332" key="GridCell.Tab.0.right/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597128426836" />
     <state x="781" y="345" key="SettingsEditor" timestamp="1596685743210">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -269,25 +282,29 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="498" height="446" key="SwitcherDM/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597006256147" />
-    <state x="187" y="521" key="Vcs.Push.Dialog.v2" timestamp="1596959768162">
+    <state x="187" y="521" key="Vcs.Push.Dialog.v2" timestamp="1597038014118">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="187" y="521" key="Vcs.Push.Dialog.v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596959768162" />
+    <state x="187" y="521" key="Vcs.Push.Dialog.v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597038014118" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596526835233">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596526835233" />
-    <state x="956" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1597001054881">
+    <state x="956" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1597090379446">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="956" y="524" key="com.intellij.ide.util.TipDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597001054881" />
+    <state x="956" y="524" key="com.intellij.ide.util.TipDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597090379446" />
     <state x="1087" y="612" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596869090867">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1087" y="612" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596869090867" />
+    <state x="1021" y="343" key="refactoring.ChangeSignatureDialog" timestamp="1597128043846">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1021" y="343" key="refactoring.ChangeSignatureDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597128043846" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pybot$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1596917711590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pybot$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1597128426832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pybot$bot.coverage" NAME="bot Coverage Results" MODIFIED="1596857325390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
