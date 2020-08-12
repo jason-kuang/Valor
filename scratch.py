@@ -78,8 +78,9 @@ def fileTesting(name):
 def champTesting(name):
     champ = Champion.Champion("Yone")
     abilities = champ.abilities()
-    print(str(abilities["PASSIVE"].description))
+    print(str(abilities["PASSIVE"].name))
 
 
 if __name__ == "__main__":
-    champTesting("Yone")
+    champ = Champion.Champion("Yone")
+    print(champ.abilities()["PASSIVE"].description)

@@ -22,6 +22,6 @@ class Ability:
         description = json['description']
         cooldown = json['cooldownBurn'] if kind != AbilityKind.PASSIVE else ""
         kind = kind
-        return cls(name, kind, description, cooldown)
+        return cls(kind, name, description, cooldown)
 
 

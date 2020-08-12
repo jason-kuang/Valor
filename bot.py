@@ -1,15 +1,17 @@
 import discord
 import json
 import cassiopeia as cass
-import urllib
+import urllib.request
 import os.path
 from os import path
-from objects import Ability
+from objects import Ability, Champion
 from cassiopeia import Summoner
 
 
 client = discord.Client()
 cass.set_default_region("NA")
+with urllib.request.urlopen("https://ddragon.leagueoflegends.com/api/versions.json") as url:
+    data = json.loads
 
 
 def extractNames(message):
@@ -66,19 +68,17 @@ async def on_message(message):
 
     if message.content.startswith('$champion'):
         name = extractNames(message).title().replace(" ", "")
-        with open('champions/{champion}.json'.format(champion=name), encoding="utf8") as champData:
-            champion = json.load(champData)['data'][name]
-            spells = champion['spells']
-            champQ = Ability.Ability.fromJson(spells[0], Ability.AbilityKind.Q)
-            champW = Ability.Ability.fromJson(spells[1], Ability.AbilityKind.W)
-            champE = Ability.Ability.fromJson(spells[2], Ability.AbilityKind.E)
-            champR = Ability.Ability.fromJson(spells[3], Ability.AbilityKind.R)
-            champPassive = Ability.Ability.fromJson(champion['passive'], Ability.AbilityKind.PASSIVE)
-            P = "Passive: {name} - {description}\n".format(name=champPassive.name,description=champPassive.description)
-            Q = "Q: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=champQ.name,description=champQ.description, cooldownBurn=champQ.cooldown)
-            W = "W: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=champW.name,description=champW.description, cooldownBurn=champW.cooldown)
-            E = "E: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=champE.name,description=champE.description, cooldownBurn=champE.cooldown)
-            R = "R: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=champR.name,description=champR.description, cooldownBurn=champR.cooldown)
+        if name == "Wukong":
+            name = "MonkeyKing"
+        champion = Champion.Champion(name)
+        if not path.exists("champions/{champion}.json".format(champion=name)):
+            champion.update()
+        abilities = champion.abilities()
+        P = "Passive: {name} - {description}\n".format(name=abilities["PASSIVE"].name,description=abilities["PASSIVE"].description)
+        Q = "Q: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=abilities["Q"].name,description=abilities["Q"].description, cooldownBurn=abilities["Q"].cooldown)
+        W = "W: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=abilities["W"].name,description=abilities["W"].description, cooldownBurn=abilities["W"].cooldown)
+        E = "E: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=abilities["E"].name,description=abilities["E"].description, cooldownBurn=abilities["E"].cooldown)
+        R = "R: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=abilities["R"].name,description=abilities["R"].description, cooldownBurn=abilities["R"].cooldown)
         print("Returned champion data for {champ}".format(champ=name))
         await message.channel.send(P + Q + W + E + R)
         

@@ -12,16 +12,11 @@ class Champion:
         with open('champions/{champion}.json'.format(champion=self.name), encoding="utf8") as champData:
             champion = json.load(champData)['data'][self.name]
             spells = champion['spells']
-            champQ = Ability.Ability.fromJson(spells[0], Ability.AbilityKind.Q)
-            champW = Ability.Ability.fromJson(spells[1], Ability.AbilityKind.W)
-            champE = Ability.Ability.fromJson(spells[2], Ability.AbilityKind.E)
-            champR = Ability.Ability.fromJson(spells[3], Ability.AbilityKind.R)
-            champPassive = Ability.Ability.fromJson(champion['passive'], Ability.AbilityKind.PASSIVE)
-            skills["PASSIVE"] = champPassive
-            skills["Q"] = champQ
-            skills["W"] = champW
-            skills["E"] = champE
-            skills["R"] = champR
+            skills["PASSIVE"] = Ability.Ability.fromJson(champion['passive'], Ability.AbilityKind.PASSIVE)
+            skills["Q"] = Ability.Ability.fromJson(spells[0], Ability.AbilityKind.Q)
+            skills["W"] = Ability.Ability.fromJson(spells[1], Ability.AbilityKind.W)
+            skills["E"] = Ability.Ability.fromJson(spells[2], Ability.AbilityKind.E)
+            skills["R"] = Ability.Ability.fromJson(spells[3], Ability.AbilityKind.R)
         return skills
 
     def update(self):
@@ -30,5 +25,5 @@ class Champion:
             champion=self.name)
         with urllib.request.urlopen(url) as url:
             data = json.loads(url.read().decode())
-            with open("testingDir/{champion}.json".format(champion=self.name), "w") as output:
+            with open("champions/{champion}.json".format(champion=self.name), "w") as output:
                 json.dump(data, output)
