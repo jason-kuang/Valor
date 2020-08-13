@@ -10,159 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d4663ea-e973-4db0-9eca-90175e0785b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/challengers.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/champions/Evelynn.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/champions/Kindred.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currentversion.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Aatrox.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Ahri.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Akali.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Alistar.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Amumu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Anivia.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Annie.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Aphelios.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Ashe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/AurelionSol.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Azir.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Bard.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Blitzcrank.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Brand.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Braum.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Caitlyn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Camille.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Cassiopeia.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Chogath.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Corki.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Darius.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Diana.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/DrMundo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Draven.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Ekko.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Elise.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Evelynn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Ezreal.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Fiddlesticks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Fiora.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Fizz.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Galio.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Gangplank.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Garen.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Gnar.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Gragas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Graves.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Hecarim.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Heimerdinger.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Illaoi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Irelia.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Ivern.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Janna.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/JarvanIV.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Jax.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Jayce.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Jhin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Jinx.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Kaisa.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Kalista.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Karma.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Karthus.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Kassadin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Katarina.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Kayle.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Kayn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Kennen.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Khazix.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Kindred.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Kled.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/KogMaw.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Leblanc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/LeeSin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Leona.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Lillia.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Lissandra.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Lucian.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Lulu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Lux.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Malphite.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Malzahar.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Maokai.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/MasterYi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/MissFortune.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Mordekaiser.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Morgana.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Nami.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Nasus.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Nautilus.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Neeko.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Nidalee.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Nocturne.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Nunu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Olaf.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Orianna.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Ornn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Pantheon.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Poppy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Pyke.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Qiyana.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Quinn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Rakan.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Rammus.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/RekSai.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Renekton.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Rengar.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Riven.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Rumble.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Ryze.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Sejuani.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Senna.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Sett.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Shaco.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Shen.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Shyvana.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Singed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Sion.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Sivir.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Skarner.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Sona.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Soraka.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Swain.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Sylas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Syndra.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/TahmKench.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Taliyah.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Talon.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Taric.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Teemo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Thresh.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Tristana.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Trundle.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Tryndamere.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/TwistedFate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Twitch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Udyr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Urgot.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Varus.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Vayne.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Veigar.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Velkoz.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Vi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Viktor.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Vladimir.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Volibear.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Warwick.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Wukong.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Xayah.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Xerath.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/XinZhao.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Yasuo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Yone.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Yorick.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Yuumi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Zac.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Zed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Ziggs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Zilean.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Zoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champions/Zyra.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects/Ability.py" beforeDir="false" afterPath="$PROJECT_DIR$/objects/Ability.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/objects/Champion.py" beforeDir="false" afterPath="$PROJECT_DIR$/objects/Champion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch.py" afterDir="false" />
     </list>
@@ -285,7 +138,8 @@
       <workItem from="1596916012638" duration="10100000" />
       <workItem from="1597000285520" duration="9591000" />
       <workItem from="1597090371087" duration="14333000" />
-      <workItem from="1597178954349" duration="7553000" />
+      <workItem from="1597178954349" duration="7849000" />
+      <workItem from="1597293351560" duration="3510000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.&#10;&#10;Working functions include...not much.">
       <created>1596526577153</created>
@@ -364,7 +218,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597128538993</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Converted the bot to take advantage of new logic for the Champion object.&#10;&#10;Furthermore, added the ability for the bot to self-regulate its updates by querying Riot's DataDragon to check if there's a new version every time. Furthermore, when there is no update detected, then the bot will read data from local storages which makes faster runtime and lower internet utilization.&#10;&#10;However, update detection has not fully been implemented but will be soon.">
+      <created>1597215412693</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1597215412693</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Converted the bot to take advantage of new logic for the Champion object.&#10;&#10;Furthermore, added the ability for the bot to self-regulate its updates by querying Riot's DataDragon to check if there's a new version every time. Furthermore, when there is no update detected, then the bot will read data from local storages which makes faster runtime and lower internet utilization.&#10;&#10;However, update detection has not fully been implemented but will be soon.&#10;&#10;EDIT: Minor addition of the Champion folder again.">
+      <created>1597215482318</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1597215482318</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +261,9 @@
     <MESSAGE value="Added local support for Yone.&#10;&#10;Changed some formatting of the $champion command." />
     <MESSAGE value="Created an Ability object to help with the redundancy of developing abilities for each Champion. &#10;&#10;Future plans involve wanting to create champion classes to further reduce redundancy." />
     <MESSAGE value="Created an Champion object as well to further the transition into Object Oriented Programming.&#10;Created the groundwork for a self-updating champion dictionary. (Will need future polish).&#10;&#10;Champion object also has error where asking the ability's name will return its kind (Q,W,E,R,Passive) or so. I think I know why but it's late and I'll fix it tomorrow." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created an Champion object as well to further the transition into Object Oriented Programming.&#10;Created the groundwork for a self-updating champion dictionary. (Will need future polish).&#10;&#10;Champion object also has error where asking the ability's name will return its kind (Q,W,E,R,Passive) or so. I think I know why but it's late and I'll fix it tomorrow." />
+    <MESSAGE value="Converted the bot to take advantage of new logic for the Champion object.&#10;&#10;Furthermore, added the ability for the bot to self-regulate its updates by querying Riot's DataDragon to check if there's a new version every time. Furthermore, when there is no update detected, then the bot will read data from local storages which makes faster runtime and lower internet utilization.&#10;&#10;However, update detection has not fully been implemented but will be soon." />
+    <MESSAGE value="Converted the bot to take advantage of new logic for the Champion object.&#10;&#10;Furthermore, added the ability for the bot to self-regulate its updates by querying Riot's DataDragon to check if there's a new version every time. Furthermore, when there is no update detected, then the bot will read data from local storages which makes faster runtime and lower internet utilization.&#10;&#10;However, update detection has not fully been implemented but will be soon.&#10;&#10;EDIT: Minor addition of the Champion folder again." />
+    <option name="LAST_COMMIT_MESSAGE" value="Converted the bot to take advantage of new logic for the Champion object.&#10;&#10;Furthermore, added the ability for the bot to self-regulate its updates by querying Riot's DataDragon to check if there's a new version every time. Furthermore, when there is no update detected, then the bot will read data from local storages which makes faster runtime and lower internet utilization.&#10;&#10;However, update detection has not fully been implemented but will be soon.&#10;&#10;EDIT: Minor addition of the Champion folder again." />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596521238579">
@@ -404,10 +274,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="989" y="286" key="#scratch/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596685481795" />
-    <state x="404" y="265" key="CommitChangelistDialog2" timestamp="1597215411271">
+    <state x="74" y="265" key="CommitChangelistDialog2" timestamp="1597304115565">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="404" y="265" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597215411271" />
+    <state x="74" y="265" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597304115565" />
     <state x="157" y="189" key="DiffContextDialog" timestamp="1596610936676">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -416,22 +286,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1148" y="594" key="Github.ShareDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596526827002" />
-    <state width="2517" height="332" key="GridCell.Tab.0.bottom" timestamp="1597188910274">
+    <state width="2517" height="332" key="GridCell.Tab.0.bottom" timestamp="1597303357490">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="332" key="GridCell.Tab.0.bottom/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597188910274" />
-    <state width="2517" height="332" key="GridCell.Tab.0.center" timestamp="1597188910274">
+    <state width="2517" height="332" key="GridCell.Tab.0.bottom/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597303357490" />
+    <state width="2517" height="332" key="GridCell.Tab.0.center" timestamp="1597303357490">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="332" key="GridCell.Tab.0.center/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597188910274" />
-    <state width="2517" height="332" key="GridCell.Tab.0.left" timestamp="1597188910274">
+    <state width="2517" height="332" key="GridCell.Tab.0.center/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597303357490" />
+    <state width="2517" height="332" key="GridCell.Tab.0.left" timestamp="1597303357490">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="332" key="GridCell.Tab.0.left/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597188910274" />
-    <state width="2517" height="332" key="GridCell.Tab.0.right" timestamp="1597188910274">
+    <state width="2517" height="332" key="GridCell.Tab.0.left/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597303357490" />
+    <state width="2517" height="332" key="GridCell.Tab.0.right" timestamp="1597303357490">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="332" key="GridCell.Tab.0.right/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597188910274" />
+    <state width="2517" height="332" key="GridCell.Tab.0.right/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597303357490" />
     <state x="781" y="345" key="SettingsEditor" timestamp="1596685743210">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -440,18 +310,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="498" height="446" key="SwitcherDM/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597006256147" />
-    <state x="187" y="521" key="Vcs.Push.Dialog.v2" timestamp="1597215453421">
+    <state x="187" y="521" key="Vcs.Push.Dialog.v2" timestamp="1597215483586">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="187" y="521" key="Vcs.Push.Dialog.v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597215453421" />
+    <state x="187" y="521" key="Vcs.Push.Dialog.v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597215483586" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596526835233">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596526835233" />
-    <state x="956" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1597178954273">
+    <state x="956" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1597293491957">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="956" y="524" key="com.intellij.ide.util.TipDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597178954273" />
+    <state x="956" y="524" key="com.intellij.ide.util.TipDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597293491957" />
     <state x="1087" y="612" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596869090867">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -462,7 +332,7 @@
     <state x="1021" y="343" key="refactoring.ChangeSignatureDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597128043846" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pybot$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1597188908221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pybot$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1597303042684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pybot$bot.coverage" NAME="bot Coverage Results" MODIFIED="1596857325390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

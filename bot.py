@@ -10,8 +10,18 @@ from cassiopeia import Summoner
 
 client = discord.Client()
 cass.set_default_region("NA")
+
+# Check for any updates within the league client.
 with urllib.request.urlopen("https://ddragon.leagueoflegends.com/api/versions.json") as url:
-    data = json.loads
+    data = json.load(url)
+    with open("currentversion.json") as versionNum:
+        version = json.load(versionNum)
+    #If there's a new version, update the version.
+    if version["version"] != data[0]:
+        version["version"] = data[0]
+        with open("currentversion.json", "w") as output:
+            json.dump(version, output)
+
 
 
 def extractNames(message):
@@ -71,7 +81,9 @@ async def on_message(message):
         if name == "Wukong":
             name = "MonkeyKing"
         champion = Champion.Champion(name)
-        if not path.exists("champions/{champion}.json".format(champion=name)):
+        if (not path.exists("champions/{champion}.json".format(champion=name))) or champion.version() != version["version"]:
+            print(version["version"])
+            print (champion.version())
             champion.update()
         abilities = champion.abilities()
         P = "Passive: {name} - {description}\n".format(name=abilities["PASSIVE"].name,description=abilities["PASSIVE"].description)

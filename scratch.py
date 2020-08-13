@@ -78,9 +78,16 @@ def fileTesting(name):
 def champTesting(name):
     champ = Champion.Champion("Yone")
     abilities = champ.abilities()
-    print(str(abilities["PASSIVE"].name))
+    with urllib.request.urlopen("https://ddragon.leagueoflegends.com/api/versions.json") as url:
+        data = json.load(url)
+        with open("currentversion.json") as versionNum:
+            version = json.load(versionNum)
+        if version["version"] != data[0]:
+            version["version"] = data[0]
+            with open("currentversion.json", "w") as output:
+                json.dump(version, output)
 
 
 if __name__ == "__main__":
     champ = Champion.Champion("Yone")
-    print(champ.abilities()["PASSIVE"].description)
+    print(champTesting("Yone"))

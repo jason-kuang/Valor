@@ -1,6 +1,7 @@
 import urllib.request
 import json
 from objects import Ability
+from os import path
 
 
 class Champion:
@@ -18,6 +19,14 @@ class Champion:
             skills["E"] = Ability.Ability.fromJson(spells[2], Ability.AbilityKind.E)
             skills["R"] = Ability.Ability.fromJson(spells[3], Ability.AbilityKind.R)
         return skills
+
+    def version(self):
+        if not path.exists("champions/{champion}.json".format(champion=self.name)):
+            return "0"
+        with open('champions/{champion}.json'.format(champion=self.name), encoding="utf8") as vdata:
+            version = json.load(vdata)['version']
+            return version
+
 
     def update(self):
         url = "https://ddragon.leagueoflegends.com/cdn/{version}/data/en_US/champion/{champion}.json".format(
