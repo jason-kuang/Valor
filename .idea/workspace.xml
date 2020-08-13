@@ -10,14 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d4663ea-e973-4db0-9eca-90175e0785b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/challengers.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/champions/Evelynn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/champions/Kindred.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currentversion.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/objects/Champion.py" beforeDir="false" afterPath="$PROJECT_DIR$/objects/Champion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +135,7 @@
       <workItem from="1597090371087" duration="14333000" />
       <workItem from="1597178954349" duration="7849000" />
       <workItem from="1597293351560" duration="3510000" />
+      <workItem from="1597343956049" duration="1529000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.&#10;&#10;Working functions include...not much.">
       <created>1596526577153</created>
@@ -274,10 +270,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="989" y="286" key="#scratch/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596685481795" />
-    <state x="74" y="265" key="CommitChangelistDialog2" timestamp="1597304115565">
+    <state x="503" y="267" key="CommitChangelistDialog2" timestamp="1597304213002">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="74" y="265" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597304115565" />
+    <state x="503" y="267" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597304213002" />
     <state x="157" y="189" key="DiffContextDialog" timestamp="1596610936676">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -310,18 +306,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="498" height="446" key="SwitcherDM/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597006256147" />
-    <state x="187" y="521" key="Vcs.Push.Dialog.v2" timestamp="1597215483586">
+    <state x="187" y="521" key="Vcs.Push.Dialog.v2" timestamp="1597304219789">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="187" y="521" key="Vcs.Push.Dialog.v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597215483586" />
+    <state x="187" y="521" key="Vcs.Push.Dialog.v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597304219789" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596526835233">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596526835233" />
-    <state x="956" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1597293491957">
+    <state x="956" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1597343958506">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="956" y="524" key="com.intellij.ide.util.TipDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597293491957" />
+    <state x="956" y="524" key="com.intellij.ide.util.TipDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597343958506" />
     <state x="1087" y="612" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596869090867">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -22,7 +22,7 @@ class Champion:
 
     def version(self):
         if not path.exists("champions/{champion}.json".format(champion=self.name)):
-            return "0"
+            return "0" #This will signal that the file does not exist and therefore a version cannot be returned.
         with open('champions/{champion}.json'.format(champion=self.name), encoding="utf8") as vdata:
             version = json.load(vdata)['version']
             return version

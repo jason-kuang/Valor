@@ -35,26 +35,29 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+    # Stops an infinite loop of the bot talking to itself.
     if message.author == client.user:
         return
-
-    if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
-
+    # Returns info about a match somebody is playing. It will return one line for each player each containing a {name} {rank} is playing {champion}
     if message.content.startswith('$match'):
-        x = extractNames(message)
-        summoner = Summoner(name=x, region="NA")
-        emptyStr = "{name} is not in a match right now!".format(name = x)
-        if summoner.current_match is not None:
+        IGN = extractNames(message)
+        summoner = Summoner(name=IGN, region="NA")
+        emptyStr = "{name} is not in a match right now!".format(name = IGN)
+        if summoner.current_match is not None: # Catch error of somebody not playing a match.
             participant = summoner.current_match.participants
-            c = 0
+            c = 0 #Needed so that I can split the match into a 5v5. Probably a better way to implement this.
             emptyStr = "{type} {time}\n".format(type=summoner.current_match.queue.name, time= summoner.current_match.duration)
-            for x in participant:
-                emptyStr += "{name} ({rank}) is playing {champion}\n".format(name=x.summoner.name, champion=x.champion.name, rank = str(x.summoner.league_entries[0].tier) + ' ' + str(x.summoner.league_entries[0].division))
+            for IGN in participant:
+                emptyStr += "{name} ({rank}) is playing {champion}\n".format(name=IGN.summoner.name, champion=IGN.champion.name, rank = str(IGN.summoner.league_entries[0].tier) + ' ' + str(IGN.summoner.league_entries[0].division))
                 c += 1
                 if c == 5:
                     emptyStr += "\n"
         await message.channel.send(emptyStr)
+
+    # League of Legends has a ranking system where a Challenger is of the highest level. Only 300 players or so are allowed at a time.
+    # Not only are 300 players allowed, they must constantly fight for their place and play a minimum of one game a week.
+    # If somebody surpasses them in League Points (LP) which are gained by winning, they are a higher rank of Challenger.
+    # This command, given somebody's in game name and if they are in Challenger, will return their current place in the leaderboard.
 
     if message.content.startswith('$challenger'):
         name = extractNames(message)
@@ -62,30 +65,36 @@ async def on_message(message):
         players = challenger.entries
         i = 1
         playerDict = {}
-        for x in players:
-            playerDict[x.summoner.name] = x.league_points
+        for IGN in players:
+            playerDict[IGN.summoner.name] = IGN.league_points
         sorteds = sorted(playerDict.items(), key=lambda x: x[1], reverse=True)
-        for x in sorteds:
-            playerDict[x[0]] = i
+        for IGN in sorteds:
+            playerDict[IGN[0]] = i
+            # After this playerDict[IGN[0]] command, playerDict now maps a summoner name -> integer representing its ranking. Not their League Points.
             i += 1
         #with open('challengers.txt','r') as rankings:
            # rank = json.load(rankings)
             #if playerDict[rankings.keys] !=
         with open('challengers.txt','w') as outfile:
+            # This exports the current list of challengers.
             json.dump(playerDict,outfile)
         returned = "{player} is rank {rank} in Challenger queue!".format(player=name, rank=playerDict[name])
         await message.channel.send(returned)
 
+    # This command returns data from the Riot DataDragon API that will show a quick breakdown for a requested champion.
+    # The command is utilized as $champion "Ashe" and will return you her Passive, and her four abilities broken down along with a cooldown.
+    # This command was created mainly because I keep Discord up on my second monitor and checking my opposing player's cooldowns is now easier.
+    # This command is also the first command that takes advantage of self-updating.
     if message.content.startswith('$champion'):
         name = extractNames(message).title().replace(" ", "")
-        if name == "Wukong":
-            name = "MonkeyKing"
+        if name == "Wukong": #For some reason, the Riot API has "Wukong" named as "MonkeyKing". This will catch that.
+            name = "MonkeyKing" #I'll convert this to a dictionary of common mispellings soon so I can catch more errors.
         champion = Champion.Champion(name)
+        # This line catches two situations: Whether the file does not exist, or if a new version of the game has been pushed out.
+        # It will either update the locally stored file with the new patch details, or fetch the file should it not exist.
         if (not path.exists("champions/{champion}.json".format(champion=name))) or champion.version() != version["version"]:
-            print(version["version"])
-            print (champion.version())
             champion.update()
-        abilities = champion.abilities()
+        abilities = champion.abilities() #Returns a dictionary
         P = "Passive: {name} - {description}\n".format(name=abilities["PASSIVE"].name,description=abilities["PASSIVE"].description)
         Q = "Q: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=abilities["Q"].name,description=abilities["Q"].description, cooldownBurn=abilities["Q"].cooldown)
         W = "W: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=abilities["W"].name,description=abilities["W"].description, cooldownBurn=abilities["W"].cooldown)
