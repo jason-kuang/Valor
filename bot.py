@@ -40,7 +40,7 @@ async def on_message(message):
     # Stops an infinite loop of the bot talking to itself.
     if message.author == client.user:
         return
-    
+
     # Returns info about a match somebody is playing. It will return one line for each player each containing a {name} {rank} is playing {champion}
     if message.content.startswith('$match'):
         IGN = extractNames(message)
