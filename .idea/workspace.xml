@@ -10,14 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d4663ea-e973-4db0-9eca-90175e0785b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/champions/KogMaw.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/champions/MasterYi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/champions/RekSai.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/champions/TahmKench.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pybot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pybot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challengers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/challengers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects/Champion.py" beforeDir="false" afterPath="$PROJECT_DIR$/objects/Champion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,6 +139,7 @@
       <workItem from="1597458525665" duration="2831000" />
       <workItem from="1597641501203" duration="1757000" />
       <workItem from="1597694427403" duration="2746000" />
+      <workItem from="1597697184547" duration="267000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.&#10;&#10;Working functions include...not much.">
       <created>1596526577153</created>
@@ -330,9 +326,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="332" key="GridCell.Tab.0.right/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597303357490" />
-    <state x="781" y="345" key="SettingsEditor" timestamp="1597697014137">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="586" y="303" key="SettingsEditor" timestamp="1597697203642">
+      <screen x="0" y="23" width="1920" height="1135" />
     </state>
+    <state x="586" y="303" key="SettingsEditor/0.23.1920.1135@0.23.1920.1135" timestamp="1597697203642" />
     <state x="781" y="345" key="SettingsEditor/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597697014137" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1597006256147">
       <screen x="0" y="0" width="2560" height="1400" />
