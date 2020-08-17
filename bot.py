@@ -87,15 +87,15 @@ async def on_message(message):
     # This command was created mainly because I keep Discord up on my second monitor and checking my opposing player's cooldowns is now easier.
     # This command is also the first command that takes advantage of self-updating.
     if message.content.startswith('$champion'):
-        mispellings = {"Wukong": "MonkeyKing", "J4": "JarvanIV", "Jarvan IV": "JarvanIV", "Kai'sa": "Kaisa", "Cho'Gath": "Chogath", "j4": "JarvanIV"}
+        mispellings = {"Wukong": "MonkeyKing", "J4": "JarvanIV", "Jarvan IV": "JarvanIV", "Kai'sa": "Kaisa", "Cho'Gath": "Chogath", "j4": "JarvanIV", "JarvanIv": "JarvanIV", "Kai'Sa": "Kaisa", "KhaZix": "Khazix"}
         name = extractNames(message).title().replace(" ", "")
         if mispellings.get(name) is not None:
             name = mispellings[name]
+        name = re.sub(r'\W+', '', name)
         print(name)
-        re.sub(r'\W+', '', name)
         champion = Champion.Champion(name)
         if (not path.exists("champions/{champion}.json".format(champion=name))) or champion.version() != version["version"]:
-            champion.update()
+            champion.update(version["version"])
         abilities = champion.abilities()
         P = "Passive: {name} - {description}\n".format(name=abilities["PASSIVE"].name,description=abilities["PASSIVE"].description)
         Q = "Q: {name} - {description} | Cooldown: {cooldownBurn}\n".format(name=abilities["Q"].name,description=abilities["Q"].description, cooldownBurn=abilities["Q"].cooldown)

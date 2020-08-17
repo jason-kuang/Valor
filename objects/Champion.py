@@ -27,10 +27,9 @@ class Champion:
             version = json.load(vdata)['version']
             return version
 
-
-    def update(self):
+    def update(self,version):
         url = "https://ddragon.leagueoflegends.com/cdn/{version}/data/en_US/champion/{champion}.json".format(
-            version="10.16.1",
+            version=version,
             champion=self.name)
         with urllib.request.urlopen(url) as url:
             data = json.loads(url.read().decode())
