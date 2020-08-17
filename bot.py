@@ -6,7 +6,7 @@ import os.path
 from os import path
 from objects import Ability, Champion
 from cassiopeia import Summoner
-
+import re
 
 client = discord.Client()
 cass.set_default_region("NA")
@@ -51,7 +51,11 @@ async def on_message(message):
             c = 0
             emptyStr = "{type} {time}\n".format(type=summoner.current_match.queue.name, time= summoner.current_match.duration)
             for IGN in participant:
-                emptyStr += "{name} ({rank}) is playing {champion}\n".format(name=IGN.summoner.name, champion=IGN.champion.name, rank = str(IGN.summoner.league_entries[0].tier) + ' ' + str(IGN.summoner.league_entries[0].division))
+                try:
+                    rank =  str(IGN.summoner.league_entries[0].tier) + ' ' + str(IGN.summoner.league_entries[0].division)
+                except IndexError:
+                    rank = IGN.summoner.level
+                emptyStr += "{name} ({rank}) is playing {champion}\n".format(name=IGN.summoner.name, champion=IGN.champion.name, rank = rank)
                 c += 1
                 if c == 5:
                     emptyStr += "\n"
@@ -83,9 +87,12 @@ async def on_message(message):
     # This command was created mainly because I keep Discord up on my second monitor and checking my opposing player's cooldowns is now easier.
     # This command is also the first command that takes advantage of self-updating.
     if message.content.startswith('$champion'):
+        mispellings = {"Wukong": "MonkeyKing", "J4": "JarvanIV", "Jarvan IV": "JarvanIV", "Kai'sa": "Kaisa", "Cho'Gath": "Chogath", "j4": "JarvanIV"}
         name = extractNames(message).title().replace(" ", "")
-        if name == "Wukong":
-            name = "MonkeyKing"
+        if mispellings.get(name) is not None:
+            name = mispellings[name]
+        print(name)
+        re.sub(r'\W+', '', name)
         champion = Champion.Champion(name)
         if (not path.exists("champions/{champion}.json".format(champion=name))) or champion.version() != version["version"]:
             champion.update()

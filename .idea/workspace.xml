@@ -11,9 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1d4663ea-e973-4db0-9eca-90175e0785b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challengers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/challengers.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +134,9 @@
       <workItem from="1597090371087" duration="14333000" />
       <workItem from="1597178954349" duration="7849000" />
       <workItem from="1597293351560" duration="3510000" />
-      <workItem from="1597343956049" duration="6551000" />
+      <workItem from="1597343956049" duration="7077000" />
+      <workItem from="1597458525665" duration="2831000" />
+      <workItem from="1597641501203" duration="1757000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.&#10;&#10;Working functions include...not much.">
       <created>1596526577153</created>
@@ -243,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597347508138</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added a nicer readme!">
+      <created>1597385858371</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1597385858371</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +283,8 @@
     <MESSAGE value="Converted the bot to take advantage of new logic for the Champion object.&#10;&#10;Furthermore, added the ability for the bot to self-regulate its updates by querying Riot's DataDragon to check if there's a new version every time. Furthermore, when there is no update detected, then the bot will read data from local storages which makes faster runtime and lower internet utilization.&#10;&#10;However, update detection has not fully been implemented but will be soon.&#10;&#10;EDIT: Minor addition of the Champion folder again." />
     <MESSAGE value="Nothing changed except for some code cleanup and extra commenting.&#10;&#10;This commit should also make this git repository public!" />
     <MESSAGE value="I realized that my commenting style was inconsistent and messy.&#10;&#10;Removed most in-line comments and generally wrote one code block on top of each function." />
-    <option name="LAST_COMMIT_MESSAGE" value="I realized that my commenting style was inconsistent and messy.&#10;&#10;Removed most in-line comments and generally wrote one code block on top of each function." />
+    <MESSAGE value="Added a nicer readme!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a nicer readme!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596521238579">
@@ -287,10 +295,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="989" y="286" key="#scratch/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596685481795" />
-    <state x="74" y="267" key="CommitChangelistDialog2" timestamp="1597347507559">
+    <state x="1524" y="213" key="CommitChangelistDialog2" timestamp="1597385857765">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="74" y="267" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597347507559" />
+    <state x="1524" y="213" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597385857765" />
     <state x="157" y="189" key="DiffContextDialog" timestamp="1596610936676">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -323,18 +331,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="498" height="446" key="SwitcherDM/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597006256147" />
-    <state x="187" y="521" key="Vcs.Push.Dialog.v2" timestamp="1597347509892">
+    <state x="187" y="521" key="Vcs.Push.Dialog.v2" timestamp="1597385867016">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="187" y="521" key="Vcs.Push.Dialog.v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597347509892" />
+    <state x="187" y="521" key="Vcs.Push.Dialog.v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597385867016" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596526835233">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1596526835233" />
-    <state x="956" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1597343958506">
+    <state x="956" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1597641640344">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="956" y="524" key="com.intellij.ide.util.TipDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597343958506" />
+    <state x="956" y="524" key="com.intellij.ide.util.TipDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1597641640344" />
     <state x="1087" y="612" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596869090867">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
